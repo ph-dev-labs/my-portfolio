@@ -1,74 +1,63 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import { Box, Button, Toolbar, Typography } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/material/Icon";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
-    <div>
+    <Box sx={{ flexGrow: 1, boxShadow: 10}}>
       <AppBar
-        component="nav"
+        position="relative"
         sx={{
           backgroundColor: "#20272F",
-          height: "100px",
+          
         }}
+        elevation={10}
       >
-        <Toolbar
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "space-evenly",
-          }}
-        >
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
+        <Toolbar>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "block", sm: "block" } }}
+            sx={{ flexGrow: 1, marginRight: "20px" }}
           >
             MEZIE
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "flex" }, mr: 30 }}>
-            <Link className="links" to="/">
+          <div className="links-cont">
+            <Link to="/" className="links">
               Home
             </Link>
-            <Link className="links" to="/projects">
-              Projects
+            <Link to="/about" className="links">
+              About us
             </Link>
-            <Link className="links" to="/about">
-              About me{" "}
+            <Link to="/projects" className="links">
+              Project
             </Link>
-            <Link className="links" to="/services">
-              {" "}
-              service
+            <Link to="/services" className="links">
+              Services
             </Link>
-          </Box>
-          <Button
-            variant="outlined"
-            size="large"
-            sx={{
-              mr: 5,
-              fontWeight: 400,
-              color: "#48CC9A",
-              fontSize: "15px",
-              lineHeight: "27px",
-              letterSpacing: "0.06em",
-              border: "1px solid #48CC9A"
-            }}
-          >
-            Download CV
-          </Button>
+          </div>
+          <div className="btn-cont">
+            <Button
+              variant="outlined"
+              sx={{
+                fontFamily: "Nunito",
+                fontWeight: 600,
+                lineHeight: "27px",
+                letterSpacing: "0.06em",
+                color: "#48CC9A",
+                borderColor: "#48CC9A",
+                textAlign: "center"
+              }}
+            >
+              DOWNLOAD CV
+            </Button>
+          </div>
         </Toolbar>
       </AppBar>
-    </div>
+    </Box>
   );
 };
+export default Navbar;
