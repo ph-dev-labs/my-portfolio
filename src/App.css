@@ -37,3 +37,23 @@
     margin-right: 170px;
    
 }
+
+.contact-dev {
+    margin-top: 10px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.icon-cont {
+    margin: 10px;
+    height: 44px;
+    width: 44px;
+    color: #fff;
+    background-color: #48CC9A;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    text-align: center;
+}
