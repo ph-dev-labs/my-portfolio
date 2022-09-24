@@ -6,9 +6,12 @@
 }
 
 .dev-details {
+    padding: 30px;
+    margin: 25px;
     padding-top: 30px;
     margin-left: 40px;
     margin-bottom: 40px;
+    width: 755px;
 }
 
 .links {
@@ -22,7 +25,7 @@
 }
 
 .btn-cont {
-    margin-right: 40px;
+    margin-right: 40px
 }
 
 .links-cont {
@@ -30,11 +33,10 @@
 }
 
 .image-cont {
-    position: relative;
     width: 412.11px;
-    height: 349.41px;
-    margin-top: 40px;
-    margin-right: 170px;
+    height: 372.41px;
+    margin-top: 140px;
+    margin-right: auto;
    
 }
 
@@ -54,6 +56,11 @@
     width: 44px;
     color: #fff;
     background-color: #48CC9A;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     text-align: center;
+    border-radius: 8px;
+}
+
+.icons {
+    margin-top: 10px;
 }

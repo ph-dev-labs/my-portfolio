@@ -5,7 +5,7 @@ import ReactComponent from "../asset/IMG_6875.jpeg";
 
 const Image = () => {
   return (
-    <Card>
+    <Card sx={{width: "300px", height: "310px" , marginLeft: "auto"}}>
       <CardMedia
         component="img"
         image={ReactComponent}

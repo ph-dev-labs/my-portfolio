@@ -21,7 +21,7 @@ const Navbar = () => {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, marginRight: "20px" }}
+            sx={{ flexGrow: 1, marginRight: "20px", fontFamily: "DM Mono", fontWeight:"500"}}
           >
             MEZIE
           </Typography>

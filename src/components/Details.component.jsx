@@ -8,7 +8,7 @@ import PublicIcon from '@mui/icons-material/Public';
 const Details = () => {
   return (
     <Box
-      sx={{ backgroundColor: "#20272F", display: "flex", flexDirection: "row" }}
+      sx={{ backgroundColor: "#20272F", display: "flex", flexDirection: "row", justifyContent: "space-between" }}
     >
       <div className="dev-details">
         <Typography
@@ -63,13 +63,17 @@ const Details = () => {
             variant="outlined"
             sx={{
               fontFamily: "Nunito",
+              padding: "10px",
+              width: "208px",
+              height: "57px",
               fontWeight: 600,
               lineHeight: "27px",
               letterSpacing: "0.06em",
               color: "#48CC9A",
               borderColor: "#48CC9A",
               textAlign: "center",
-              marginBottom: "5px"
+              marginTop: "15px",
+              marginBottom: "15px"
             }}
           >
             Get in Touch
@@ -83,14 +87,15 @@ const Details = () => {
               lineHeight: "27px",
               letterSpacing: "0.06em",
               color: "#fff",
+              marginTop: "20px"
             }}
           >
             FIND ME ON
           </Typography>
           <div className="icon-container">
-            <Icon image={ <TwitterIcon fontSize="large"/>}/>
-            <Icon image={ <GitHubIcon  fontSize="large"/>}/>
-            <Icon image={ <PublicIcon fontSize="large"/>}/>
+            <Icon image={ <TwitterIcon fontSize="medium" className="icons"/>}/>
+            <Icon image={ <GitHubIcon  fontSize="medium" className="icons"/>}/>
+            <Icon image={ <PublicIcon fontSize="medium" className="icons"/>}/>
 
           </div>
         </div>
